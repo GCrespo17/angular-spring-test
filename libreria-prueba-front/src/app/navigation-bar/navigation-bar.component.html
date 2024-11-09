@@ -1,1 +1,6 @@
-<p>navigation-bar works!</p>
+<div>
+    @for(genero of generos(); track genero){
+        <p>|</p>
+        <a (click)="seleccionarGenero(genero)" [routerLink]="genero" routerLinkActive="selected">{{genero}}</a>
+    }
+</div>

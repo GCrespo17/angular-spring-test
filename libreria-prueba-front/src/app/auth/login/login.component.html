@@ -1,0 +1,22 @@
+<form (ngSubmit)="onSubmit()">
+  <p>
+    <label for="usuario">Usuario</label>
+    <input type="text" id="usuario" name="usuario" [(ngModel)]="inputUser"/>
+  </p>
+
+  <p>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" [(ngModel)]="inputPassword"/>
+  </p>
+
+  <p class="accion">
+    <button type="button" (click)="onCancel()">Cancelar</button>
+    <button type="submit">Login</button>
+  </p>
+  <p class="registrar">
+    No tienes una cuenta? Registrate!
+    <a routerLink="/auth/register">
+      <button type="button">Registrarse</button>
+    </a>
+  </p>
+</form>

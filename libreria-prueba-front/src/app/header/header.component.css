@@ -9,10 +9,13 @@ h1{
     flex: 70%;
     padding: 0.5em;
 }
-button{
+a{
     background-color: #191C24;
     border: 0;
     margin: 1em;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+a:hover{
+    cursor: pointer;
 }

@@ -1,0 +1,30 @@
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    border: 1px solid white;
+    padding: 0.75rem;
+    border-radius: 15px;
+    height: 18rem;
+    width: 10rem;
+    max-width: 15rem;
+    max-height: 20rem;
+    overflow: hidden;
+}
+img{
+    max-width: 10rem;
+    max-height: 11rem;
+    border-radius: 15px;
+}
+button{
+    border-radius: 15px;
+    background-color: rgb(164, 164, 213);
+    border: 0;
+    width: 80%;
+    height: 1.5rem;
+}
+button:hover{
+    background-color: white;
+}

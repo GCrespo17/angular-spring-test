@@ -1,0 +1,18 @@
+<app-books-container>
+  <ul id="books">
+    @for(book of bookList; track book.id){
+      @if (actualGenre()==='' || actualGenre()==='Todo') {
+        <li>
+          <app-book [bookRecieved]="book"/>
+        </li>
+      }@else if(book.genre === actualGenre()){
+        <li>
+          <app-book [bookRecieved]="book" />
+        </li>
+      }
+    }
+    @empty {
+      <li>No hay libros de este genero</li>
+    }
+  </ul>
+</app-books-container>

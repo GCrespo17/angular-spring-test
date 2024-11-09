@@ -1,0 +1,22 @@
+div{
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,
+a:active,
+.selected{
+    border-radius: 15px;
+    padding: 0.3rem 1.5rem;
+    background-color: #94D2BD;
+    color: #001118;
+    cursor: pointer;
+}
